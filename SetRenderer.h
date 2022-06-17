@@ -25,6 +25,7 @@ private:
 			if (error)
 			{
 				MessageBoxA(nullptr, errorMsg, "error",MB_OK);
+				gameH = (HANDLE)-1;
 				delete[] errorMsg;
 			}
 		}
